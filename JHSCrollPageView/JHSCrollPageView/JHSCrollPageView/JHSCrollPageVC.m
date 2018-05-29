@@ -148,21 +148,23 @@
 }
 
 - (void)selectTitleVC:(NSUInteger)integer {
-    self.selectLabel.textColor = self.normalTitleColor;
-    
-    UILabel *label = self.titleLabels[integer];
-    [UIView animateWithDuration:0.25 animations:^{
-        CGRect rect = self.slipView.frame;
-        CGSize labelSize = [label.text sizeWithAttributes:@{NSFontAttributeName: label.font}];
-        CGFloat x = _titleWidth * integer + (_titleWidth-labelSize.width)*0.5;
-        self.slipView.frame = CGRectMake(x, rect.origin.y, rect.size.width, rect.size.height);
-    }];
-    label.textColor = self.highlightedTitleColor;
-    
-    NSArray *vcs = [NSArray arrayWithObject:self.viewControllers[label.tag - 1000]];
-    [_pageVC setViewControllers:vcs direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
-    
-    self.selectLabel = label;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.selectLabel.textColor = self.normalTitleColor;
+        
+        UILabel *label = self.titleLabels[integer];
+        [UIView animateWithDuration:0.25 animations:^{
+            CGRect rect = self.slipView.frame;
+            CGSize labelSize = [label.text sizeWithAttributes:@{NSFontAttributeName: label.font}];
+            CGFloat x = _titleWidth * integer + (_titleWidth-labelSize.width)*0.5;
+            self.slipView.frame = CGRectMake(x, rect.origin.y, rect.size.width, rect.size.height);
+        }];
+        label.textColor = self.highlightedTitleColor;
+        
+        NSArray *vcs = [NSArray arrayWithObject:self.viewControllers[label.tag - 1000]];
+        [_pageVC setViewControllers:vcs direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+        
+        self.selectLabel = label;
+    });
 }
 
 // 根据数组元素，得到下标值

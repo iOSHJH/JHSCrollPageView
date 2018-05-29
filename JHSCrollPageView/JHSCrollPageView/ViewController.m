@@ -31,6 +31,7 @@
     vc3.view.backgroundColor = [UIColor brownColor];
     
     JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:@[vc1, vc2, vc3] titles:@[@"vc1", @"vc2", @"vc3"]];
+    [vc selectTitleVC:1];
 //    vc.navigationBarHide = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
