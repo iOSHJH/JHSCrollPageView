@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ 关于UIPageViewController性能，用到的控制器才会加载
+ */
 @interface JHSCrollPageVC : UIViewController
 
 /** titles view*/

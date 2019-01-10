@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"viewDidLoad -- %@",self.title);
+    NSLog(@"viewDidLoad -- %p",self);
     
 }
 
