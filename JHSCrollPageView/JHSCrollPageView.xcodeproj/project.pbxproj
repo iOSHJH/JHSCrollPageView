@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F1CE97521E35AD7005D7C38 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CE97321E35AD7005D7C38 /* TestViewController.m */; };
+		7F1CE97621E35AD7005D7C38 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CE97421E35AD7005D7C38 /* TestViewController.xib */; };
 		7FDA1A761F8CB4400000E596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA1A751F8CB4400000E596 /* AppDelegate.m */; };
 		7FDA1A791F8CB4400000E596 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA1A781F8CB4400000E596 /* ViewController.m */; };
 		7FDA1A7C1F8CB4400000E596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDA1A7A1F8CB4400000E596 /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F1CE97221E35AD7005D7C38 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7F1CE97321E35AD7005D7C38 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		7F1CE97421E35AD7005D7C38 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		7FDA1A711F8CB4400000E596 /* JHSCrollPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHSCrollPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDA1A741F8CB4400000E596 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FDA1A751F8CB4400000E596 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +71,9 @@
 				7FDA1A751F8CB4400000E596 /* AppDelegate.m */,
 				7FDA1A771F8CB4400000E596 /* ViewController.h */,
 				7FDA1A781F8CB4400000E596 /* ViewController.m */,
+				7F1CE97221E35AD7005D7C38 /* TestViewController.h */,
+				7F1CE97321E35AD7005D7C38 /* TestViewController.m */,
+				7F1CE97421E35AD7005D7C38 /* TestViewController.xib */,
 				7FDA1A7A1F8CB4400000E596 /* Main.storyboard */,
 				7FDA1A7D1F8CB4400000E596 /* Assets.xcassets */,
 				7FDA1A7F1F8CB4400000E596 /* LaunchScreen.storyboard */,
@@ -144,6 +152,7 @@
 			files = (
 				7FDA1A811F8CB4400000E596 /* LaunchScreen.storyboard in Resources */,
 				7FDA1A7E1F8CB4400000E596 /* Assets.xcassets in Resources */,
+				7F1CE97621E35AD7005D7C38 /* TestViewController.xib in Resources */,
 				7FDA1A7C1F8CB4400000E596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +168,7 @@
 				7FDA1A841F8CB4400000E596 /* main.m in Sources */,
 				7FDA1A8D1F8CB4880000E596 /* JHSCrollPageVC.m in Sources */,
 				7FDA1A761F8CB4400000E596 /* AppDelegate.m in Sources */,
+				7F1CE97521E35AD7005D7C38 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FF75Z63XL;
 				INFOPLIST_FILE = JHSCrollPageView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongsui.JHSCrollPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FF75Z63XL;
 				INFOPLIST_FILE = JHSCrollPageView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hongsui.JHSCrollPageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
