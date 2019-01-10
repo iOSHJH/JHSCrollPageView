@@ -46,12 +46,12 @@
     
     // 关于NSArray性能：默认会加载前三个控制器，后面的用到才加载
     NSArray *vcs = @[vc1, vc2, vc3, vc4, vc5, vc6, vc7];
-    NSLog(@"%@",vcs);
+//    NSLog(@"%@",vcs);
     
-//    JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:vcs titles:@[@"vc1", @"vc2", @"vc3", @"vc4", @"vc5", @"vc6", @"vc7"]];
-////    [vc selectTitleVC:1];
-////    vc.navigationBarHide = YES;
-//    [self.navigationController pushViewController:vc animated:YES];
+    JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:vcs titles:@[@"vc1", @"vc2", @"vc3", @"vc4", @"vc5", @"vc6", @"vc7"]];
+    [vc selectTitleVC:1];
+//    vc.navigationBarHide = YES;
+    [self.navigationController pushViewController:vc animated:YES];
     
     
     
