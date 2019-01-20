@@ -27,32 +27,13 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     
-    TestViewController *vc1 = [TestViewController new];
-//    vc1.title = @"vc1";
-//    vc1.view.backgroundColor = [UIColor brownColor];
-    TestViewController *vc2 = [TestViewController new];
-//    vc2.title = @"vc2";
-//    vc2.view.backgroundColor = [UIColor lightGrayColor];
-    TestViewController *vc3 = [TestViewController new];
-//    vc3.title = @"vc3";
-//    vc3.view.backgroundColor = [UIColor brownColor];
-    TestViewController *vc4 = [TestViewController new];
-//    vc4.title = @"vc4";
-//    vc4.view.backgroundColor = [UIColor brownColor];
-    TestViewController *vc5 = [TestViewController new];
-//    vc5.title = @"vc5";
-//    vc5.view.backgroundColor = [UIColor brownColor];
-    TestViewController *vc6 = [TestViewController new];
-//    vc6.title = @"vc6";
-//    vc6.view.backgroundColor = [UIColor brownColor];
-    TestViewController *vc7 = [TestViewController new];
-//    vc7.title = @"vc7";
-//    vc7.view.backgroundColor = [UIColor brownColor];
-    
-    NSArray *vcs = @[vc1, vc2, vc3, vc4, vc5, vc6, vc7];
-    //NSLog(@"%@",vcs);
-    
-    JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:vcs titles:@[@"vc1", @"vc2", @"vc3", @"vc4", @"vc5", @"vc6", @"vc7"]];
+    NSMutableArray *titles = [NSMutableArray array];
+    NSMutableArray *vcs = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        [titles addObject:[NSString stringWithFormat:@"title%d",i]];
+        [vcs addObject:[UIViewController new]];
+    }
+    JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:vcs titles:titles];
 //    [vc selectTitleVC:1];
     [self.navigationController pushViewController:vc animated:YES];
     
