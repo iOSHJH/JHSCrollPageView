@@ -53,8 +53,7 @@
     //NSLog(@"%@",vcs);
     
     JHSCrollPageVC *vc = [[JHSCrollPageVC alloc] initWithVCs:vcs titles:@[@"vc1", @"vc2", @"vc3", @"vc4", @"vc5", @"vc6", @"vc7"]];
-    [vc selectTitleVC:1];
-//    vc.navigationBarHide = YES;
+//    [vc selectTitleVC:1];
     [self.navigationController pushViewController:vc animated:YES];
     
     

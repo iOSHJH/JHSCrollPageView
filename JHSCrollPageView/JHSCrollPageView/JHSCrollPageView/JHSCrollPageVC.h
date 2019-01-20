@@ -27,8 +27,6 @@
 @property (nonatomic, assign) NSInteger selectIndex;
 /***  将要显示的子控制器*/
 @property (nonatomic,strong) UIViewController *willShowVC;
-/** 隐藏显示导航条*/
-@property (nonatomic, assign) BOOL navigationBarHide;
 
 /** 创建方式*/
 - (instancetype)initWithVCs:(NSArray<UIViewController *> *)vcs titles:(NSArray<NSString *> *)titles;
@@ -36,3 +34,4 @@
 - (void)selectTitleVC:(NSUInteger)integer;
 
 @end
+
