@@ -10,6 +10,7 @@
 
 /*
  关于UIPageViewController性能，用到的控制器才会加载
+ 缺陷：当快速的切换页面的时候，造成闪退
  */
 @interface JHSCrollPageVC : UIViewController
 
